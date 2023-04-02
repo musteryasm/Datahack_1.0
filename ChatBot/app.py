@@ -3,6 +3,7 @@ import argparse
 import pandas as pd
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
+import random
 
 
 def generate_association_rules(input_item):
@@ -49,8 +50,12 @@ def generate_association_rules(input_item):
 
 
 def get_most_likely_bought_item(input_item):
+    random_list = ['Focaccia', 'Guest Love', 'Bubbling Shrimp', 'Etta Rita', 'Bucatini Cacio e Pepe', 'Spicy Meatballs', 'The "etta" Chopped Salad', 'Wild Mushroom', 'Cavatelli Bolognese', 'Ricotta Pillows', 'Margherita', 'Crispy Chicken Sandwich', 'Little Gem Salad', 'Pomodoro', 'Caesar', 'Etta Old Fashioned', 'Broccolini', 'Rack Roasted Oysters', 'Burrata', 'Sparrow Regular Coffee', 'Breakfast Sandwich', 'etta Old Fashione', 'sunset on damen', 'Green With Envy', 'Huevos Rancheros', 'Pepperoni Pizza']
     likely_items = generate_association_rules(input_item)
-    temp = likely_items[0]
+    try:
+        temp = likely_items[0]
+    except IndexError:
+        temp = random.choice(random_list)
     i = 0
     while temp == input_item:
         i += 1
