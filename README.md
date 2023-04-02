@@ -1,11 +1,7 @@
-**# PowerPuffBros_Datahack**:- <br><br>
-**(I)DataHack_PreProcessing.ipynb** contains all the steps carried out during pre-processing of data. <br>
-  (i) First we have check where dataset contains null values or not <br>
-  (ii) Then it drops the rows which contains negative values <br>
-  (iii) Then it drops the unnecessary values like ALL IN ON SAVORY , CCard Conveience , Staff Discount , cake cutting charge etc <br>
-  (iv) Then it perform Label Encoding for cilent_id and order_id <br>
-In preprocessing all the garbage values were removed. <br><br>
-**(II)Datahack_FeatureSelection.ipynb**:- contains a cluester for oder_id where order_id contains all the nammes of the item order.<br><br>
-**(III)Datahack_Model.ipynb** :- The Apriori algorithm is a data mining algorithm that identifies frequent itemsets in a dataset. By iteratively extending smaller itemsets until no more frequent itemsets can be found. The algorithm is based on the observation that if an itemset is frequent, then all of its subsets must also be frequent. and based on that if user gives a nput i will predict the outpu labeb<br><br>
-**(IV)ChantBot** :- We have made a chart bot with the help of the .. <br><br>
-**(V)Website** :-
+The project consists of three Jupyter Notebooks: "DataHack_PreProcessing.ipynb", "Datahack_FeatureSelection.ipynb", and "Datahack_Model.ipynb".
+
+(I)In "DataHack_PreProcessing.ipynb", the dataset is pre-processed to prepare it for analysis. The first step is to check for missing values in the dataset. Next, the rows that contain negative values are dropped. Then, unnecessary values such as "ALL IN ONE SAVORY", "CCard Convenience", "Staff Discount", "Cake Cutting Charge", etc. are removed. Finally, label encoding is performed on the "client_id" and "order_id" columns. This ensures that only the relevant data is used for further analysis.
+
+(II)In "Datahack_FeatureSelection.ipynb", a cluster is created for the "order_id" column. This is done to group together similar items that are ordered by customers. This allows for more meaningful analysis to be conducted.
+
+(III)In "Datahack_Model.ipynb", the Apriori algorithm is used for data mining. The algorithm identifies frequent itemsets in a dataset by iteratively extending smaller itemsets until no more frequent itemsets can be found. The algorithm is based on the observation that if an itemset is frequent, then all of its subsets must also be frequent. Based on this algorithm, the notebook is used to predict the output label based on the user input.
