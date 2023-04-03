@@ -8,4 +8,4 @@ The project consists of three Jupyter Notebooks: "DataHack_PreProcessing.ipynb",
 
 (IV) ChatBox ,To recommend the food item that most customers prefer with a given food item, we have used collaborative filtering, which predicts preferences based on the preferences of similar users. This requires a dataset of customer transactions and ratings, which can be used to train a model that computes similarity scores between food items. The top-rated item can then be recommended. Building an effective recommendation system requires significant data and resources.
 
-(V) Website , It is a static website where we have displayed some static information about the restaurants and aur chartBox will appear in website 
+(V) Website , It is a static website where we have displayed some static information about the restaurants and aur ChatBox will appear on the website.
