@@ -1,11 +1,79 @@
-The project consists of three Jupyter Notebooks: "DataHack_PreProcessing.ipynb", "Datahack_FeatureSelection.ipynb", and "Datahack_Model.ipynb".
 
-(I) "DataHack_PreProcessing.ipynb", the dataset is pre-processed to prepare it for analysis. The first step is to check for missing values in the dataset. Next, the rows that contain negative values are dropped. Then, unnecessary values such as "ALL IN ONE SAVORY", "CCard Convenience", "Staff Discount", "Cake Cutting Charge", etc. are removed. Finally, label encoding is performed on the "client_id" and "order_id" columns. This ensures that only the relevant data is used for further analysis.
+![Project Banner](https://www.canva.com/design/DAFuJj65iSg/PHelebGMPo7qpvoMSutdjg/edit?category=tACFapY0WQc)
 
-(II) "Datahack_FeatureSelection.ipynb", a cluster is created for the "order_id" column. This is done to group together similar items that are ordered by customers. This allows for more meaningful analysis to be conducted.
+### Overview
 
-(III) "Datahack_Model.ipynb", the Apriori algorithm is used for data mining. The algorithm identifies frequent itemsets in a dataset by iteratively extending smaller itemsets until no more frequent itemsets can be found. The algorithm is based on the observation that if an itemset is frequent, then all of its subsets must also be frequent. Based on this algorithm, the notebook is used to predict the output label based on the user input.
+This project comprises three Jupyter Notebooks, each playing a vital role in data preprocessing, feature selection, and predictive modeling. Alongside, there's a ChatBox and a user-friendly website to enhance the overall user experience.
 
-(IV) ChatBox ,To recommend the food item that most customers prefer with a given food item, we have used collaborative filtering, which predicts preferences based on the preferences of similar users. This requires a dataset of customer transactions and ratings, which can be used to train a model that computes similarity scores between food items. The top-rated item can then be recommended. Building an effective recommendation system requires significant data and resources.
+---
 
-(V) Website , It is a static website where we have displayed some static information about the restaurants and aur ChatBox will appear on the website.
+#### (I) Data Preprocessing: "DataHack_PreProcessing.ipynb"
+
+In this notebook, we perform essential data preprocessing tasks to prepare the dataset for thorough analysis. The process unfolds as follows:
+
+- **Handling Missing Values:** We diligently identify and address any missing data points within the dataset to ensure data integrity.
+
+- **Filtering Negative Values:** Rows containing negative values are filtered out to maintain data quality and consistency.
+
+- **Data Cleansing:** We eliminate irrelevant values such as "ALL IN ONE SAVORY," "CCard Convenience," "Staff Discount," "Cake Cutting Charge," etc., streamlining the dataset for analysis.
+
+- **Label Encoding:** To facilitate further analysis, we perform label encoding on the "client_id" and "order_id" columns.
+
+---
+
+#### (II) Feature Selection: "Datahack_FeatureSelection.ipynb"
+
+In this notebook, we focus on feature selection and creating meaningful clusters for analysis. The pivotal steps include:
+
+- **Creating Clusters:** We create clusters for the "order_id" column, allowing us to group similar items ordered by customers. This step enhances the depth of our analysis.
+
+---
+
+#### (III) Predictive Modeling: "Datahack_Model.ipynb"
+
+In this notebook, we harness the power of the Apriori algorithm for data mining. The Apriori algorithm identifies frequent itemsets in the dataset by iteratively extending smaller itemsets until no more frequent itemsets can be found. Key highlights include:
+
+- **Frequent Itemset Mining:** Leveraging the Apriori algorithm, we unearth frequent itemsets within the data, providing valuable insights for predictive modeling.
+
+- **Output Prediction:** Using the algorithmic insights, this notebook enables us to make predictions based on user input, enhancing decision-making.
+
+---
+
+#### (IV) ChatBox
+
+**Food Item Recommendations:** Our ChatBox is equipped to recommend food items based on customer preferences. Leveraging collaborative filtering, it predicts preferences by analyzing the choices of similar users. While this is a powerful feature, building an effective recommendation system requires substantial data and resources.
+
+---
+
+#### (V) Website
+
+Our static website is designed to provide an engaging user interface. It showcases essential information about restaurants and features an integrated ChatBox for user interaction. The website offers a seamless experience for users seeking information or recommendations related to food.
+
+---
+
+### Getting Started
+
+To begin exploring this project, you can follow these steps:
+
+1. Clone this repository to your local machine.
+2. Access the Jupyter Notebooks for data preprocessing, feature selection, and modeling.
+3. Explore the ChatBox for food recommendations.
+4. Visit the website to access static information and interact with the ChatBox.
+
+### Dependencies
+
+This project relies on various libraries and tools, including but not limited to:
+
+- Python
+- Jupyter Notebook
+- Scikit-Learn
+- Pandas
+- NumPy
+- ChatBot Framework
+- HTML/CSS/JavaScript (for the website)
+
+Please ensure you have these dependencies installed to run the project effectively.
+
+### Contributing
+
+We welcome contributions and enhancements to this project. If you have suggestions, bug fixes, or additional features to propose, please open an issue or submit a pull request.
